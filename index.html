@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre de Tu Empresa - Venta de Productos de Calidad</title>
+    <meta name="description" content="Compra los mejores productos en nuestra tienda online. Calidad garantizada y envío rápido.">
+    <link rel="stylesheet" href="xd.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXX-Y');
+    </script>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="container">
+            <img src="logo.png" alt="Logo de la Empresa" class="logo">
+            <nav aria-label="Main Navigation">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn-cta">Menú</a>
+        </div>
+    </header>
+    
+    <!-- Sección de Hero -->
+    <section id="hero">
+        <div class="container">
+            <h1>Descubre Nuestros Productos Innovadores</h1>
+            <p>Calidad y eficiencia en cada uno de nuestros artículos.</p>
+            <a href="#productos" class="btn-cta">Compra Ahora</a>
+        </div>
+    </section>
+    
+    <!-- Descripción del Producto/Servicio -->
+    <section id="productos">
+        <div class="container">
+            <h2>Nuestros Productos</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="producto1.jpg" alt="Producto 1">
+                    <h3>Producto Innovador 1</h3>
+                    <p>Descripción breve del Producto Innovador 1 que destaca sus características principales y beneficios.</p>
+                    <a href="#" class="btn-cta">Ver Más</a>
+                </div>
+                <div class="product-card">
+                    <img src="producto2.jpg" alt="Producto 2">
+                    <h3>Producto Innovador 2</h3>
+                    <p>Descripción breve del Producto Innovador 2 que destaca sus características principales y beneficios.</p>
+                    <a href="#" class="btn-cta">Ver Más</a>
+                </div>
+                <div class="product-card">
+                    <img src="producto3.jpg" alt="Producto 3">
+                    <h3>Producto Innovador 3</h3>
+                    <p>Descripción breve del Producto Innovador 3 que destaca sus características principales y beneficios.</p>
+                    <a href="#" class="btn-cta">Ver Más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonios -->
+    <section id="testimonios">
+        <div class="container">
+            <h2>Lo Que Dicen Nuestros Clientes</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <p>"Producto 1 ha superado todas mis expectativas. ¡Muy recomendado!"</p>
+                    <p>- Cliente Satisfecho</p>
+                </div>
+                <div class="testimonial">
+                    <p>"El servicio y la calidad del Producto 2 son inigualables. Estoy muy contento con mi compra."</p>
+                    <p>- Otro Cliente Satisfecho</p>
+                </div>
+                <div class="testimonial">
+                    <p>"Producto 3 realmente ha mejorado mi vida diaria. Excelente compra."</p>
+                    <p>- Cliente Feliz</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Acerca de Nosotros -->
+    <section id="sobre-nosotros">
+        <div class="container">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos una empresa comprometida con la calidad y la innovación. Nuestra misión es ofrecer productos que mejoren la vida de nuestros clientes.</p>
+        </div>
+    </section>
+    
+    <!-- Contacto -->
+    <section id="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Pie de Página -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Nombre de Tu Empresa. Todos los derechos reservados.</p>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Script para el menú responsive -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuBtn = document.querySelector('header .btn-cta');
+            const nav = document.querySelector('header nav ul');
+            
+            menuBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                nav.classList.toggle('open');
+            });
+        });
+    </script>
+</body>
+</html>
